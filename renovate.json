@@ -18,9 +18,7 @@
     "packageRules": [
       {
         "matchPackageNames": [ "node" ],
-        "patch": {
-          "enabled": false
-        }
+        "rangeStrategy": "replace"
       }
     ]
   }
