@@ -14,6 +14,14 @@
     ],
     "rangeStrategy": "bump",
     "semanticCommitType": "chore",
-    "separateMinorPatch": true
+    "separateMinorPatch": true,
+    "packageRules": [
+      {
+        "matchPackageNames": [ "node" ],
+        "patch": {
+          "enabled": false
+        }
+      }
+    ]
   }
 }
