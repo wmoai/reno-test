@@ -1,0 +1,19 @@
+{
+  "extends": [
+    ":timezone(Asia/Tokyo)",
+    "group:monorepos",
+    ":widenPeerDependencies",
+    ":label(renovate)",
+    ":semanticCommitScopeDisabled"
+  ],
+  "npm": {
+    "extends": [
+      ":noUnscheduledUpdates",
+      "npm:unpublishSafe",
+      "helpers:disableTypesNodeMajor"
+    ],
+    "rangeStrategy": "bump",
+    "semanticCommitType": "chore",
+    "separateMinorPatch": true
+  }
+}
